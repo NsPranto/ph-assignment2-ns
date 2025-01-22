@@ -281,3 +281,41 @@ marquee {
     display: block;
     margin:80px auto 0px;
 }
+/* footer section style  */
+.footer-section{
+    padding:130px 0px;
+}
+.footer-container{
+   display: grid;
+   grid-template-columns:repeat(3,1fr);
+   /* gap:150px;    */
+}
+.footer-head{
+    margin-left:-20px;
+}
+.footer-item-two{
+ padding-left:150px;
+}
+.footer-item-three{
+  padding-left:150px;
+}
+.footer-head{
+    align-items:center;
+    margin-bottom:35px;
+}
+.footer-item-two ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.footer-about-title{
+    margin-bottom:32px;
+}
+.footer-item-three{
+    text-align: center;
+}
+.footer-social-title{
+    margin-bottom: 32px;
+}
+.social img{
+    margin-right:10px;
+}
