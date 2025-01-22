@@ -119,7 +119,7 @@
 }
 /* header section style  */
 #header-section,
-.curriculumn-container,
+.curriculum-container,
 .stories-container,
 .footer-section{
     max-width:75%;
@@ -181,7 +181,7 @@ marquee {
 .stories-title{
     text-align: center;
 }
-.curriculumn-container{
+.curriculum-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
@@ -318,4 +318,114 @@ marquee {
 }
 .social img{
     margin-right:10px;
+}
+
+/* responsive mobile device  */
+@media screen and (max-width:576px){
+    /* common style  */
+    .text-one-normal{
+        font-size:0.8rem;
+        font-weight:500;
+        font-family: raleway;
+        line-height:28.3px;
+    }
+    .text-five{
+        font-size:2.25rem;
+        font-weight: 700;
+        font-family: Quicksand;
+        line-height: 57.5px;
+    }
+    .text-four-special{
+        font-size:2rem;
+        font-family: Quicksand;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    .text-six{
+        font-size: 2.5rem;
+        font-family: Quicksand;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    #header-section,
+    .curriculum-container,
+    .stories-container,
+    .footer-section{
+        max-width: 100%;
+    }
+    #header-section{
+        padding-top:10px;
+    }
+    .display-none{
+        display: none;
+    }
+    .btn-special{
+        border:none;
+        outline:none;
+        padding:5px 10px;
+        border-radius:25px;
+    }
+    .position{
+        transform: translate(20px,-25px);
+    }
+    /* navigation style  */   
+    .nav-bar{
+        border-bottom: 0.5px solid rgb(254, 163, 1);
+        padding:10px 20px;
+    }
+    .fa-bars{
+        display: block;
+        font-size: 2rem;
+    }
+    /* banner  */
+    .banner{
+        flex-direction: column-reverse;
+        gap:20px;
+        padding:10px 20px;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .banner-img{
+        width:100%;
+    }
+    /* curriculum */
+    .curriculum-container{
+        grid-template-columns: repeat(1,1fr);
+        padding:0px 20px;
+        margin:20px 0px;
+    }
+    .card{
+        width: 100%;
+    }
+    /* stories  */
+    .stories{
+        padding:20px 0px;
+    }
+    .stories-container{
+        display: grid;
+        padding:0px 20px;
+        margin-top:20px;
+    }
+    .box-content{
+        padding-left:20px;
+    }
+    .column-right .box-title{
+        padding:20px 15px 20px 0px;
+    }
+    /* footer section style  */
+    .footer-section{
+        padding:60px 20px 50px    ;
+    }
+    .footer-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-item-two,
+    .footer-item-three{
+     margin-top:32px;
+     padding-left:0px;
+    }   
+    .footer-item-three{
+        text-align:start;
+    }
 }
